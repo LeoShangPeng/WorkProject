@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.qianfeng.mgp.widget.AutoScrollViewPager
+        android:id="@+id/groupbuy_head_banners_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <com.qianfeng.mgp.widget.GridViewForScrollView
+        android:id="@+id/groupbuy_head_category_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="1dp"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:verticalSpacing="1dp" />
+
+    <com.qianfeng.mgp.widget.GridViewForScrollView
+        android:id="@+id/groupbuy_head_special_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="1dp"
+        android:listSelector="#00000000"
+        android:numColumns="2"
+        android:verticalSpacing="1dp" />
+
+    <com.qianfeng.mgp.widget.ListViewForScrollView
+        android:id="@+id/groupbuy_head_recommend_listview"
+        style="@style/Widget_ListView" />
+
+</LinearLayout>

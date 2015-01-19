@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qianfeng.mgp.widget.AutoScrollViewPager
+        android:id="@+id/home_banners_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.qianfeng.mgp.widget.GridViewForScrollView
+        android:id="@+id/home_other_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="1dp"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:verticalSpacing="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="小编推荐"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/home_recommend_more_text" />
+
+        <TextView
+            android:id="@+id/home_recommend_more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多推荐>>"
+            android:background="@color/white"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/home_title_color_selector"
+            android:padding="8dp"
+            android:layout_alignParentRight="true" />
+
+
+        <com.qianfeng.mgp.widget.GridViewForScrollView
+            android:layout_below="@+id/home_recommend_more_text"
+            android:id="@+id/home_recommend_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="1dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:verticalSpacing="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="热门礼包"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/home_actindex_more_text" />
+
+        <TextView
+            android:id="@+id/home_actindex_more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多礼包>>"
+            android:background="@color/white"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/home_title_color_selector"
+            android:padding="8dp"
+            android:layout_alignParentRight="true" />
+
+        <com.qianfeng.mgp.widget.GridViewForScrollView
+            android:id="@+id/home_hot_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="1dp"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:verticalSpacing="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="活动中心"
+            android:padding="8dp"
+            android:layout_toLeftOf="@+id/home_hot_more_text" />
+
+        <TextView
+            android:id="@+id/home_hot_more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多活动>>"
+            android:background="@color/white"
+            android:textSize="@dimen/app_title_size"
+            android:textColor="@color/home_title_color_selector"
+            android:padding="8dp"
+            android:layout_alignParentRight="true" />
+
+        <com.qianfeng.mgp.widget.ListViewForScrollView
+            android:id="@+id/home_actindex_listView"
+            style="@style/Widget_ListView"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="8dp" />
+    </RelativeLayout>
+
+    <com.qianfeng.mgp.widget.ListViewForScrollView
+        android:id="@+id/home_jifeng_listview"
+        style="@style/Widget_ListView" />
+</LinearLayout>

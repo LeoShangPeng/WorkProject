@@ -1,0 +1,37 @@
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/radio_button"
+    android:orientation="horizontal"
+    android:paddingTop="2dp">
+
+    <RadioButton
+        android:id="@+id/footer_home_rbtn"
+        style="@style/Widget_RadioBtnStyle"
+        android:checked="true"
+        android:drawableTop="@drawable/rgs_home_selector"
+        android:text="@string/footer_rg_home_text" />
+
+    <RadioButton
+        android:id="@+id/footer_manito_rbtn"
+        style="@style/Widget_RadioBtnStyle"
+        android:drawableTop="@drawable/rgs_manito_selector"
+        android:text="@string/footer_rg_manito_text" />
+
+    <RadioButton
+        android:id="@+id/footer_my_rbtn"
+        style="@style/Widget_RadioBtnStyle"
+        android:drawableTop="@drawable/rgs_my_selector"
+        android:text="@string/footer_rg_my_text" />
+
+    <RadioButton
+        android:id="@+id/footer_classify_rbtn"
+        style="@style/Widget_RadioBtnStyle"
+        android:drawableTop="@drawable/rgs_classify_selector"
+        android:text="@string/footer_rg_cassify_text" />
+    <RadioButton
+        android:id="@+id/footer_activity_rbtn"
+        style="@style/Widget_RadioBtnStyle"
+        android:drawableTop="@drawable/rgs_activity_selector"
+        android:text="@string/footer_rg_activity_text" />
+</RadioGroup>

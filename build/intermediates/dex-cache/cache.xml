@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-92499c7c9473c6f78fd66dd13ea93858f612b631.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/apputils/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="f0dadbd5ece0bcd16a9e34a7b8d8b2cab9d8793d">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-ce9dd78e873d07bac04fc1c4cd87f7f4a289c65e.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/tools/Android/studiosdk/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-e091a16fc59e1d41d0e76f010c4e410a8ffb4ace.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-75549827d44351ec355baf0d441b67dddcbf88ad.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/volley/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="111f1bb6865b65d9f3f5cdaae6f029d831ff5bf0">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-a3f51543b957636799390ff17efefb62681e3740.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.5/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="ef9c8936bb86194ac47f8925ae827d6505188694">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-c69e7494f1525652c336c7c59d6f8e96ab549260.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/ptr/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="84ac1ebf64e67669e13c30fdc5e84fd07784ef4b">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-19c3c6e8b5d1d008f009d1b0912fecddd81de3f1.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/libs/fastjson-1.1.45.android.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="4d5140a0c8f5e4d0f263cac44dbac1019a908474">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/fastjson-1.1.45.android-31271e00878fb628eaca0e122ac59fc84c0775c0.jar" />
+    </item>
+    <item
+        jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-0f918b6cb82618e11b7bfc162b01b1f396d1fa19.jar" />
+    </item>
+    <item
+        jar="/Users/zw/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.5/77bf7cacf9cefe19dc105e5425d2eb1bb5285881/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-05f1f0a25bbbbbc3cc339474f796a0d33227ec38.jar" />
+    </item>
+    <item
+        jar="/Users/zw/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/gson-2.2.4-ef9ee5f39205928ad4c4ed3f34ddb7be9673d955.jar" />
+    </item>
+
+</items>

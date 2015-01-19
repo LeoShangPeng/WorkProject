@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">百度糯米</string>
+    <string name="rgs_gb_text">团购</string>
+    <string name="rgs_near_text">附近</string>
+    <string name="rgs_me_text">我的</string>
+    <string name="rgs_more_text">更多</string>
+</resources>

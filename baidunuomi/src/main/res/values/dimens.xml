@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="radiobutton_text">12sp</dimen>
+    <dimen name="radiobutton_padding">8dp</dimen>
+    <dimen name="default_pading_15">15dp</dimen>
+    <dimen name="top_city_pading">5dp</dimen>
+    <dimen name="app_text_size">12sp</dimen>
+    <dimen name="app_context_size">14sp</dimen>
+
+</resources>
