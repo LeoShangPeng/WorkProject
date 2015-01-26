@@ -11,6 +11,7 @@ import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.bitmap.PauseOnScrollListener;
 import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
@@ -19,7 +20,7 @@ import java.sql.SQLOutput;
 
 
 public class MainActivity extends ActionBarActivity {
-    public static String BEIYUN = "http://android.mengbaby.com/zhidao/index?v=1.0&urid=24221&page=1&token=H9q2drNf1t7KOzs9xVGSeN2PT4XLJVS5bCY3KJbwdTw&connectnet=wifi&mac=98%3Aff%3Ad0%3A89%3A30%3A37&zcid=128&udid=862326025366317&lang=zh&ctid=1001&dist=10";
+    public static String BEIYUN = "http://api.idothing.com/zhongzi/v2.php/Habit/getList";
     private ListView listView;
     private BitmapUtils bitmapUtils;
 
@@ -32,6 +33,20 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         HttpUtils utils = new HttpUtils();
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("user_id","94347");
+        params.addBodyParameter("appid","100");
+        utils.send(HttpRequest.HttpMethod.POST,BEIYUN,params,new RequestCallBack<Object>() {
+            @Override
+            public void onSuccess(ResponseInfo<Object> responseInfo) {
+                System.out.println(responseInfo.result.toString());
+            }
+
+            @Override
+            public void onFailure(HttpException error, String msg) {
+
+            }
+        });
     }
 
 
