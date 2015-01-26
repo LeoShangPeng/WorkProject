@@ -69,5 +69,6 @@ public class ManitoAdapter extends MeBaseAdapter<Manitio> {
         private TextView content;
         @ViewInject(R.id.manito_item_flag)
         private ImageView flag;
+
     }
 }

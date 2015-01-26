@@ -16,6 +16,8 @@ import com.alibaba.fastjson.parser.Feature;
 import com.android.volley.RequestQueue;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
@@ -61,7 +63,6 @@ public class ConnectUtils<T> {
         httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                Log.e("", url);
                 String result = responseInfo.result;
                 if (result != null && !"".equals(result)) {
                     CommonBean<T> bean = JSONObject.parseObject(result, type);
@@ -70,6 +71,41 @@ public class ConnectUtils<T> {
                         if (adapter != null) {
                             adapter.notifyDataSetChanged();
                         }
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(HttpException error, String msg) {
+
+            }
+        });
+    }
+
+    public <T> void sendRequest(HttpRequest.HttpMethod method, final String url, final TypeReference<CommonBean<T>> type, final BaseAdapter adapter, final List<T> list, final PullToRefreshListView ptrListView, final int page) {
+
+        httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
+            @Override
+            public void onSuccess(ResponseInfo<String> responseInfo) {
+                String result = responseInfo.result;
+                if (result != null && !"".equals(result)) {
+                    CommonBean<T> bean = JSONObject.parseObject(result, type);
+                    if (bean != null) {
+                        if (page == 1 && !list.isEmpty()) {
+                            list.clear();
+                        }
+                        list.addAll(bean.getInfo());
+                        if (adapter != null) {
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
+                    if (ptrListView != null) {
+                        ptrListView.onRefreshComplete();
+                    }
+                    if (bean.getPage().getTotal() <= 10 * page) {
+                        ptrListView.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
+                    } else {
+                        ptrListView.setMode(PullToRefreshBase.Mode.BOTH);
                     }
                 }
             }
@@ -109,7 +145,7 @@ public class ConnectUtils<T> {
                             ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                             imageView.setLayoutParams(params);
                             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-                            if (l!= null){
+                            if (l != null) {
                                 imageView.setOnClickListener(l);
                             }
                             bitmapUtils.display(imageView, banner.getBimg());

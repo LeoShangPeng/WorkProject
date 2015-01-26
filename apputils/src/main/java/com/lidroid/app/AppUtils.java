@@ -79,15 +79,15 @@ public class AppUtils {
         application = app;
         FileUtil.init(app.getApplicationContext());
         //捕获程序异常
-//        ExceptionHandler handler = ExceptionHandler.getInstance();
+        ExceptionHandler handler = ExceptionHandler.getInstance();
         //注册全局异常处理
-//        handler.init(app);
-        // // 发送以前没发送的报告(可选)
-//        handler.sendPreviousReportsToServer();
+        handler.init(app);
+        // 发送以前没发送的报告(可选)
+        handler.sendPreviousReportsToServer();
 //        注册网络监听广播类
-//        NetworkStateReceiver.registerNetworkStateReceiver(app.getApplicationContext());
-//        netChangeObserver = new MeNetChangeObserver();
-//        NetworkStateReceiver.registerObserver(netChangeObserver);
+        NetworkStateReceiver.registerNetworkStateReceiver(app.getApplicationContext());
+        netChangeObserver = new MeNetChangeObserver();
+        NetworkStateReceiver.registerObserver(netChangeObserver);
         DBConfigMethod();
     }
 

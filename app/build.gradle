@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.2'
     compile project(':ptr')
     compile project(':apputils')
+    compile 'com.viewpagerindicator:library:2.4.1'
 }

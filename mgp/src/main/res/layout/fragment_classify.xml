@@ -1,9 +1,26 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.qianfeng.mgp.fragment.ClassifyFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.mgp.fragment.ClassifyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.qianfeng.mgp.widget.AutoScrollViewPager
+        android:id="@+id/fragment_classify_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
 
-</FrameLayout>
+    <GridView
+        android:layout_below="@+id/fragment_classify_viewpager"
+        android:id="@+id/fragment_classify_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="1dp"
+        android:listSelector="#00000000"
+        android:numColumns="2"
+        android:verticalSpacing="1dp" />
+
+</RelativeLayout>

@@ -204,7 +204,6 @@ public class ExceptionHandler implements UncaughtExceptionHandler {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
 
-
             }
 
             @Override

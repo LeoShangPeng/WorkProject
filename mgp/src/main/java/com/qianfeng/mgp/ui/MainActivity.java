@@ -11,7 +11,8 @@ import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.qianfeng.mgp.R;
 import com.qianfeng.mgp.apapter.TabUtils;
-import com.qianfeng.mgp.fragment.ActivityFragment;
+import com.qianfeng.mgp.constant.AppConstant;
+import com.qianfeng.mgp.fragment.ActInfoFragment;
 import com.qianfeng.mgp.fragment.ClassifyFragment;
 import com.qianfeng.mgp.fragment.HomeFragment;
 import com.qianfeng.mgp.fragment.ManitoFragment;
@@ -35,14 +36,13 @@ public class MainActivity extends ActionBarActivity implements TabUtils.OnRgsExt
         fragments.add(new ManitoFragment());
         fragments.add(new MeFragment());
         fragments.add(new ClassifyFragment());
-        fragments.add(new ActivityFragment());
+        fragments.add(ActInfoFragment.newInstance(AppConstant.ACTINFO_LIST_URL));
         tabAdapter = new TabUtils(getSupportFragmentManager(), fragments, R.id.main_container_id, rgs);
         tabAdapter.setOnRgsExtraCheckedChangedListener(this);
     }
 
     /**
      * 按钮点击回调接口
-     *
      * @param radioGroup
      * @param checkedId
      * @param index

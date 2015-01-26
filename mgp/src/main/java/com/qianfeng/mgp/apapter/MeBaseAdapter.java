@@ -50,10 +50,10 @@ public abstract  class MeBaseAdapter<T> extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        return createView(i, view, viewGroup);
+    public View getView(int position, View view, ViewGroup viewGroup) {
+        return createView(position, view, viewGroup);
     }
 
-    public abstract View createView(int i, View view, ViewGroup viewGroup);
+    public abstract View createView(int position, View view, ViewGroup viewGroup);
 
 }

@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.qianfeng.mgp"
-        minSdkVersion 9
+        minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -38,5 +38,6 @@ dependencies {
     compile 'com.loopj.android:android-async-http:1.4.5'
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'in.srain.cube:ultra-ptr:1.0.5@aar'
+    compile 'com.viewpagerindicator:library:2.4.1'
 }
 

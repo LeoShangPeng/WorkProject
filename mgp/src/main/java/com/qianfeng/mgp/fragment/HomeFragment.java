@@ -42,7 +42,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class HomeFragment extends BaseFragment implements ViewPager.OnPageChangeListener {
-    private HttpUtils httpUtils = new HttpUtils();
     /**
      * 广告
      */

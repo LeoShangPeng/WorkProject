@@ -95,7 +95,9 @@ public class LogUtils {
     }
 
     public static void d(String content, Throwable tr) {
-        if (!allowD) return;
+        if (!allowD){
+            return;
+        }
         StackTraceElement caller = OtherUtils.getCallerStackTraceElement();
         String tag = generateTag(caller);
 

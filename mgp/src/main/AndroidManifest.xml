@@ -21,7 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".ui.ClassifyActivity"
+            android:label="@string/title_activity_classify" >
+        </activity>
     </application>
 
 </manifest>

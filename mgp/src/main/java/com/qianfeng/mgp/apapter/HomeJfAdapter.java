@@ -26,6 +26,7 @@ public class HomeJfAdapter extends MeBaseAdapter<HomeBean> {
         super(context, list);
         bitmapUtils = new BitmapUtils(context);
         bitmapUtils.configDefaultLoadingImage(R.drawable.img_default_05);
+        bitmapUtils.configDefaultLoadFailedImage(R.drawable.img_default_05);
     }
 
     public HomeJfAdapter(Context context, List<HomeBean> list, DownloadManager downloadManager) {

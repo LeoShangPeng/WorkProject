@@ -20,10 +20,13 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.qianfeng.mgp.R;
+import com.qianfeng.mgp.apapter.ViewPagerAdapter;
 import com.qianfeng.mgp.bean.Banner;
 import com.qianfeng.mgp.bean.CommonBean;
 import com.qianfeng.mgp.connect.ConnectUtils;
+import com.qianfeng.mgp.constant.AppConstant;
 import com.qianfeng.mgp.constant.AppStates;
+import com.qianfeng.mgp.widget.AutoScrollViewPager;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -39,8 +42,6 @@ import java.util.List;
  */
 public class BaseFragment extends Fragment {
     public Activity activity;
-
-
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
@@ -48,20 +49,13 @@ public class BaseFragment extends Fragment {
     }
 
     //添加广告栏View
-    private void addBannerView(ArrayList<Banner> banners, ArrayList<View> views, PagerAdapter pagerAdapter) {
-        BitmapUtils bitmapUtils = new BitmapUtils(activity);
-        bitmapUtils.configDefaultLoadingImage(R.drawable.img_default_04);
-        bitmapUtils.configDefaultLoadFailedImage(R.drawable.img_default_04);
-        for (Banner banner : banners) {
-            ImageView imageView = new ImageView(activity);
-            ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            imageView.setLayoutParams(params);
-            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-            imageView.setOnClickListener(new ImageOnClickLinstner());
-            bitmapUtils.display(imageView, banner.getBimg());
-            views.add(imageView);
-        }
-        pagerAdapter.notifyDataSetChanged();
+    public void initHeadPager(String url ,AutoScrollViewPager viewPager) {
+        ArrayList<View> views = new ArrayList<View>();
+        ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(views);
+        viewPager.setAdapter(pagerAdapter);
+        viewPager.startAutoScroll();
+        ConnectUtils.getInstance().sendRequestForViewPager(activity, HttpRequest.HttpMethod.GET, url, new TypeReference<CommonBean<Banner>>() {
+        }, views, pagerAdapter, null);
     }
 
     public class ImageOnClickLinstner implements View.OnClickListener {
