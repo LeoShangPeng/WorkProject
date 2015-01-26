@@ -42,6 +42,8 @@ import java.util.List;
  */
 public class BaseFragment extends Fragment {
     public Activity activity;
+    public HttpHandler<String> httpHandler;
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
@@ -49,7 +51,7 @@ public class BaseFragment extends Fragment {
     }
 
     //添加广告栏View
-    public void initHeadPager(String url ,AutoScrollViewPager viewPager) {
+    public void initHeadPager(String url, AutoScrollViewPager viewPager) {
         ArrayList<View> views = new ArrayList<View>();
         ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(views);
         viewPager.setAdapter(pagerAdapter);
@@ -75,5 +77,8 @@ public class BaseFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        if (httpHandler != null) {
+            httpHandler.cancel();
+        }
     }
 }

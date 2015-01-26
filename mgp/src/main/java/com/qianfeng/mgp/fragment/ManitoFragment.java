@@ -13,6 +13,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.ViewUtils;
 
+import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnItemClick;
@@ -63,7 +64,7 @@ public class ManitoFragment extends BaseFragment implements PullToRefreshBase.On
         listView.setDividerHeight(8);
         adapter = new ManitoAdapter(activity, list);
         listView.setAdapter(adapter);
-        ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.MANITO_LIST_URL, new TypeReference<CommonBean<Manitio>>() {
+        httpHandler = ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.MANITO_LIST_URL, new TypeReference<CommonBean<Manitio>>() {
         }, adapter, list);
         initHeadPager(AppConstant.MANITO_HEAD_URL, viewPager);
         return view;

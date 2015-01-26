@@ -21,6 +21,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
@@ -58,9 +59,9 @@ public class ConnectUtils<T> {
     }
 
 
-    public <T> void sendRequest(HttpRequest.HttpMethod method, final String url, final TypeReference<CommonBean<T>> type, final BaseAdapter adapter, final List<T> list) {
+    public <T> HttpHandler sendRequest(HttpRequest.HttpMethod method, final String url, final TypeReference<CommonBean<T>> type, final BaseAdapter adapter, final List<T> list) {
 
-        httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
+        HttpHandler httpHandler = httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
                 String result = responseInfo.result;
@@ -80,11 +81,13 @@ public class ConnectUtils<T> {
 
             }
         });
+
+        return httpHandler;
     }
 
-    public <T> void sendRequest(HttpRequest.HttpMethod method, final String url, final TypeReference<CommonBean<T>> type, final BaseAdapter adapter, final List<T> list, final PullToRefreshListView ptrListView, final int page) {
+    public <T> HttpHandler sendRequest(HttpRequest.HttpMethod method, final String url, final TypeReference<CommonBean<T>> type, final BaseAdapter adapter, final List<T> list, final PullToRefreshListView ptrListView, final int page) {
 
-        httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
+        HttpHandler handler = httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
                 String result = responseInfo.result;
@@ -115,6 +118,8 @@ public class ConnectUtils<T> {
 
             }
         });
+
+        return handler;
     }
 
     /**
@@ -161,6 +166,9 @@ public class ConnectUtils<T> {
 
             }
         });
+    }
+
+    public void cancel() {
     }
 
 }

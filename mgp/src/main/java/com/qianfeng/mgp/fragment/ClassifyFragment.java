@@ -21,6 +21,7 @@ import com.qianfeng.mgp.bean.Classify;
 import com.qianfeng.mgp.bean.CommonBean;
 import com.qianfeng.mgp.connect.ConnectUtils;
 import com.qianfeng.mgp.constant.AppConstant;
+import com.qianfeng.mgp.constant.AppStates;
 import com.qianfeng.mgp.ui.ClassifyActivity;
 import com.qianfeng.mgp.widget.AutoScrollViewPager;
 
@@ -38,6 +39,7 @@ public class ClassifyFragment extends BaseFragment {
     private ArrayList<Classify> classifies = new ArrayList<Classify>();
 
     public ClassifyFragment() {
+
     }
 
 
@@ -53,7 +55,7 @@ public class ClassifyFragment extends BaseFragment {
     private void init() {
         adapter = new ClassifysAdapter(activity, classifies);
         classifyGridView.setAdapter(adapter);
-        ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.CLASSIFY_GRID_URL, new TypeReference<CommonBean<Classify>>() {
+        httpHandler = ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.CLASSIFY_GRID_URL, new TypeReference<CommonBean<Classify>>() {
         }, adapter, classifies);
     }
 
@@ -63,7 +65,7 @@ public class ClassifyFragment extends BaseFragment {
         String type = classifies.get(position).getType();
         if (!TextUtils.isEmpty(type)) {
             Intent intent = new Intent(activity, ClassifyActivity.class);
-            intent.putExtra("type", type);
+            intent.putExtra(AppStates.INTENT_TYPE, type);
             activity.startActivity(intent);
         }
     }

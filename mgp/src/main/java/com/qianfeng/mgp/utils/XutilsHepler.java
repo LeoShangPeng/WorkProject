@@ -3,6 +3,7 @@ package com.qianfeng.mgp.utils;
 import android.content.Context;
 
 import com.lidroid.xutils.BitmapUtils;
+import com.lidroid.xutils.HttpUtils;
 
 /**
  * @Package com.qianfeng.mgp.utils
@@ -13,6 +14,8 @@ import com.lidroid.xutils.BitmapUtils;
  * @日 期:
  */
 public class XutilsHepler {
+    private static HttpUtils httpUtils;
+
     private XutilsHepler() {
     }
 
@@ -29,5 +32,12 @@ public class XutilsHepler {
             bitmapUtils = new BitmapUtils(appContext);
         }
         return bitmapUtils;
+    }
+
+    public static HttpUtils getHttpUtils() {
+        if (httpUtils == null) {
+            httpUtils = new HttpUtils();
+        }
+        return httpUtils;
     }
 }

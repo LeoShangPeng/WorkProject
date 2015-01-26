@@ -61,14 +61,13 @@ public class AppConstant {
 //    http://mobileapi.72g.com/index.php?tp=andv4/game3&op=newlist&type=1&order=rmtj&page=3
 
     /**
-     *金币最多
+     * 金币最多
+     *
      * @param url
      * @return
      */
 
 //    http://mobileapi.72g.com/index.php?tp=andv4/game3&op=newlist&type=2&order=integral&page=7
-
-
     public static String getUrl(String url) {
         return BASE_URL + url;
     }
@@ -80,8 +79,8 @@ public class AppConstant {
      * @param type
      * @return
      */
-    public static String getTypeUrl(String type) {
-        return new StringBuffer("game3&op=newlist&type=").append(type).append("&order=integral").toString();
+    public static String getTypeUrl(String type, String order, int page) {
+        return new StringBuffer("game3&op=newlist&type=").append(type).append("&order=").append(order).append("&page=").append(page).toString();
     }
 
 

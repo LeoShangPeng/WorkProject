@@ -6,5 +6,6 @@ package com.qianfeng.mgp.constant;
 public class AppStates {
 
     public static final String LOAD_DATA_SUCCESS ="success";
+    public static final String INTENT_TYPE ="type";
 
 }

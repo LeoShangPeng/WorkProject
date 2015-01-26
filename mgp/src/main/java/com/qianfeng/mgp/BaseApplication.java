@@ -18,7 +18,7 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         app = this;
-        AppUtils.getAppUtils().init(app);
+//        AppUtils.getAppUtils().init(app);
     }
 
     public static BaseApplication getApp() {
