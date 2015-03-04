@@ -3,7 +3,7 @@
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
-        <option name="GRADLE_PROJECT_PATH" value=":baidunuomi" />
+        <option name="GRADLE_PROJECT_PATH" value=":qfmsg" />
       </configuration>
     </facet>
     <facet type="android" name="Android">
@@ -84,13 +84,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="universal-image-loader-1.9.3-with-sources" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-21.0.2" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-21.0.2" level="project" />
-    <orderEntry type="library" exported="" name="fastjson-1.1.45.android" level="project" />
-    <orderEntry type="library" exported="" name="appcompat-v7-21.0.2" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-21.0.3" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-21.0.3" level="project" />
     <orderEntry type="module" module-name="apputils" exported="" />
-    <orderEntry type="module" module-name="ptr" exported="" />
   </component>
 </module>
 

@@ -2,27 +2,20 @@ package com.qianfeng.mgp.connect;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
-import com.alibaba.fastjson.parser.Feature;
-import com.android.volley.RequestQueue;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
-import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
@@ -30,7 +23,6 @@ import com.qianfeng.mgp.R;
 import com.qianfeng.mgp.bean.Banner;
 import com.qianfeng.mgp.bean.CommonBean;
 import com.qianfeng.mgp.constant.AppConstant;
-import com.qianfeng.mgp.fragment.BaseFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -111,6 +103,7 @@ public class ConnectUtils<T> {
                         ptrListView.setMode(PullToRefreshBase.Mode.BOTH);
                     }
                 }
+
             }
 
             @Override

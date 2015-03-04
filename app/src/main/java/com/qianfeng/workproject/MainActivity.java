@@ -16,16 +16,18 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 
+import org.androidannotations.annotations.EActivity;
+
 import java.sql.SQLOutput;
 
-
+@EActivity(R.layout.activity_main)
 public class MainActivity extends ActionBarActivity {
     public static String BEIYUN = "http://api.idothing.com/zhongzi/v2.php/Habit/getList";
     private ListView listView;
     private BitmapUtils bitmapUtils;
-
     /**
-     *listview 设置监听  属性  adapter
+     * listview 设置监听  属性  adapter
+     *
      * @param savedInstanceState
      */
     @Override
@@ -34,9 +36,9 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         HttpUtils utils = new HttpUtils();
         RequestParams params = new RequestParams();
-        params.addBodyParameter("user_id","94347");
-        params.addBodyParameter("appid","100");
-        utils.send(HttpRequest.HttpMethod.POST,BEIYUN,params,new RequestCallBack<Object>() {
+        params.addBodyParameter("user_id", "94347");
+        params.addBodyParameter("appid", "100");
+        utils.send(HttpRequest.HttpMethod.POST, BEIYUN, params, new RequestCallBack<Object>() {
             @Override
             public void onSuccess(ResponseInfo<Object> responseInfo) {
                 System.out.println(responseInfo.result.toString());
@@ -44,9 +46,9 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onFailure(HttpException error, String msg) {
-
             }
         });
+
     }
 
 
