@@ -65,10 +65,9 @@ public class AppConstant {
     public static final String GIFT_LIST_URL = "gift3&op=virlist&gifttype=1&gameid=";
     /**
      * 详情界面专区
+     * http://mobileapi.72g.com/index.php?tp=andv4/gift3&op=virlist&gifttype=1&gameid=1158
      */
     public static final String DETAIL_URL = "game3&op=detail&id=";
-
-
     /**
      * 评论
      * http://mobileapi.72g.com/index.php?tp=andv4/comment&op=list&id=1799&page=1

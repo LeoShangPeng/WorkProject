@@ -13,9 +13,6 @@ import com.qianfeng.mgp.R;
  * 游戏专区
  */
 public class GamePreFragment extends Fragment {
-
-
-
     public GamePreFragment() {
     }
 
@@ -23,6 +20,4 @@ public class GamePreFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_game_pre, container, false);
     }
-
-
 }
