@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/baidunuomi/baidunuomi.iml" filepath="$PROJECT_DIR$/baidunuomi/baidunuomi.iml" />
       <module fileurl="file://$PROJECT_DIR$/mgp/mgp.iml" filepath="$PROJECT_DIR$/mgp/mgp.iml" />
       <module fileurl="file://$PROJECT_DIR$/ptr/ptr.iml" filepath="$PROJECT_DIR$/ptr/ptr.iml" />
-      <module fileurl="file://$PROJECT_DIR$/qfmsg/qfmsg.iml" filepath="$PROJECT_DIR$/qfmsg/qfmsg.iml" />
       <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>

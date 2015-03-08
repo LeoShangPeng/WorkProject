@@ -132,7 +132,7 @@ public class AppConstant {
      * @return
      */
     public static String getDetailUrl(String id) {
-        return DETAIL_URL + "";
+        return BASE_URL + DETAIL_URL + id;
     }
 
     /**

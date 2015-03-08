@@ -15,7 +15,6 @@ import com.android.volley.toolbox.ImageLoader;
  * @创建日期: 14/10/19 下午7:27
  */
 public class AppImageCache implements ImageLoader.ImageCache {
-
     private static AppImageCache imageCache;
     private static LruCache<String, Bitmap> lruCache;//一级缓存强引用
 
@@ -47,7 +46,7 @@ public class AppImageCache implements ImageLoader.ImageCache {
             imageCache = new AppImageCache();
         }
 
-        return  imageCache;
+        return imageCache;
     }
 
 

@@ -25,6 +25,10 @@
             android:name=".ui.ClassifyActivity"
             android:label="@string/title_activity_classify" >
         </activity>
+        <activity
+            android:name=".ui.DetailsActivity"
+            android:label="@string/title_activity_details" >
+        </activity>
     </application>
 
 </manifest>

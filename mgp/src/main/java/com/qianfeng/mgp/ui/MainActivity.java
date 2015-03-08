@@ -4,6 +4,7 @@ package com.qianfeng.mgp.ui;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.RadioGroup;
 
 import com.lidroid.xutils.ViewUtils;
@@ -17,7 +18,6 @@ import com.qianfeng.mgp.fragment.ClassifyFragment;
 import com.qianfeng.mgp.fragment.HomeFragment;
 import com.qianfeng.mgp.fragment.ManitoFragment;
 import com.qianfeng.mgp.fragment.MeFragment;
-
 import java.util.ArrayList;
 
 @ContentView(R.layout.activity_main)
@@ -31,6 +31,9 @@ public class MainActivity extends ActionBarActivity implements TabUtils.OnRgsExt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        Toolbar 替代Actionbar;
+
         ViewUtils.inject(this);
         fragments.add(new HomeFragment());
         fragments.add(new ManitoFragment());

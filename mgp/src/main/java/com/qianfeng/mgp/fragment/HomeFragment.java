@@ -2,7 +2,6 @@ package com.qianfeng.mgp.fragment;
 
 
 import com.alibaba.fastjson.TypeReference;
-import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.client.HttpRequest;
@@ -22,9 +21,10 @@ import com.qianfeng.mgp.bean.CommonBean;
 import com.qianfeng.mgp.bean.HomeBean;
 import com.qianfeng.mgp.bean.Hot;
 import com.qianfeng.mgp.bean.OtherEnum;
-import com.qianfeng.mgp.bean.Recommend;
+import com.qianfeng.mgp.bean.Recommand;
 import com.qianfeng.mgp.connect.ConnectUtils;
 import com.qianfeng.mgp.constant.AppConstant;
+import com.qianfeng.mgp.ui.DetailsActivity;
 import com.qianfeng.mgp.widget.AutoScrollViewPager;
 import com.qianfeng.mgp.widget.GridViewForScrollView;
 import com.qianfeng.mgp.widget.ListViewForScrollView;
@@ -49,6 +49,8 @@ public class HomeFragment extends BaseFragment implements ViewPager.OnPageChange
     private AutoScrollViewPager bannerViewPager;
     private ArrayList<View> bannerViews = new ArrayList<View>();
     private ViewPagerAdapter bannerAdapter;
+    private int curIndex = 0;
+
     /**
      * 其他功能
      */
@@ -60,7 +62,7 @@ public class HomeFragment extends BaseFragment implements ViewPager.OnPageChange
      */
     @ViewInject(R.id.home_recommend_gridview)
     private GridViewForScrollView recommendGridView;
-    private ArrayList<Recommend> recommends = new ArrayList<Recommend>();
+    private ArrayList<Recommand> recommends = new ArrayList<Recommand>();
     private RecommendAdapter recommendAdapter;
     @ViewInject(R.id.home_recommend_more_text)
     private TextView recommendTextView;
@@ -154,10 +156,10 @@ public class HomeFragment extends BaseFragment implements ViewPager.OnPageChange
      */
     private void sendRequest() {
         //广告栏请求
-        ConnectUtils.getInstance().sendRequestForViewPager(activity, HttpRequest.HttpMethod.GET, AppConstant.HOME_BANNER_URL, new TypeReference<CommonBean<Banner>>() {
+        ConnectUtils.getInstance().sendRequestForViewPager(activity, HttpRequest.HttpMethod.GET, AppConstant.getUrl(AppConstant.HOME_BANNER_URL), new TypeReference<CommonBean<Banner>>() {
         }, bannerViews, bannerAdapter, new ImageOnClickLinstner());
         //数据源请求
-        ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.HOME_RECOMMEND_URL, new TypeReference<CommonBean<Recommend>>() {
+        ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.HOME_RECOMMEND_URL, new TypeReference<CommonBean<Recommand>>() {
         }, recommendAdapter, recommends);
 
         ConnectUtils.getInstance().sendRequest(HttpRequest.HttpMethod.GET, AppConstant.HOME_HOT_URL, new TypeReference<CommonBean<Hot>>() {
@@ -222,7 +224,7 @@ public class HomeFragment extends BaseFragment implements ViewPager.OnPageChange
 
     @Override
     public void onPageSelected(int position) {
-
+        curIndex = position;
     }
 
     @Override
@@ -230,5 +232,13 @@ public class HomeFragment extends BaseFragment implements ViewPager.OnPageChange
 
     }
 
+    public class ImageOnClickLinstner implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getActivity(), DetailsActivity.class);
+//            intent.putExtra("id", );
+            startActivity(intent);
+        }
+    }
 
 }

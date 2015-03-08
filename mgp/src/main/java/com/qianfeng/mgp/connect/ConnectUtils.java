@@ -2,6 +2,7 @@ package com.qianfeng.mgp.connect;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -39,7 +40,7 @@ public class ConnectUtils<T> {
     private static ConnectUtils connect;
     private HttpUtils httpUtils;
 
-    private ConnectUtils() {
+    public ConnectUtils() {
         httpUtils = new HttpUtils();
     }
 
@@ -127,7 +128,7 @@ public class ConnectUtils<T> {
      */
     public <T> void sendRequestForViewPager(final Context activity, HttpRequest.HttpMethod method, String url, final TypeReference<CommonBean<T>> type, final ArrayList<View> views, final PagerAdapter pagerAdapter, final View.OnClickListener l) {
 
-        httpUtils.send(method, AppConstant.getUrl(url), new RequestCallBack<String>() {
+        httpUtils.send(method, url, new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
                 String result = responseInfo.result;
@@ -160,6 +161,7 @@ public class ConnectUtils<T> {
             }
         });
     }
+
 
     public void cancel() {
     }

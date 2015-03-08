@@ -1,1 +1,1 @@
-include ':app', ':ptr', ':baidunuomi', ':mgp',':apputils',':volley', ':qfmsg'
+include ':app',':ptr', ':baidunuomi', ':mgp',':apputils',':volley'

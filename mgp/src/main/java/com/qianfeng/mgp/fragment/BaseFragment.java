@@ -1,6 +1,7 @@
 package com.qianfeng.mgp.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
@@ -26,6 +27,7 @@ import com.qianfeng.mgp.bean.CommonBean;
 import com.qianfeng.mgp.connect.ConnectUtils;
 import com.qianfeng.mgp.constant.AppConstant;
 import com.qianfeng.mgp.constant.AppStates;
+import com.qianfeng.mgp.ui.DetailsActivity;
 import com.qianfeng.mgp.widget.AutoScrollViewPager;
 
 import java.lang.reflect.Array;
@@ -60,12 +62,7 @@ public class BaseFragment extends Fragment {
         }, views, pagerAdapter, null);
     }
 
-    public class ImageOnClickLinstner implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
 
-        }
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

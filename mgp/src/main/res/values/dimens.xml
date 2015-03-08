@@ -8,4 +8,6 @@
     <dimen name="widget_margin">8dp</dimen>
     <dimen name="app_space_5">5dp</dimen>
 
+    <dimen name="text_size_14">14sp</dimen>
+
 </resources>

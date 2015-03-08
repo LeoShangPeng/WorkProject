@@ -10,7 +10,7 @@ import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.qianfeng.mgp.R;
-import com.qianfeng.mgp.bean.Recommend;
+import com.qianfeng.mgp.bean.Recommand;
 
 import java.util.List;
 
@@ -22,17 +22,17 @@ import java.util.List;
  * @修 改 人:
  * @日 期:
  */
-public class RecommendAdapter extends MeBaseAdapter<Recommend> {
+public class RecommendAdapter extends MeBaseAdapter<Recommand> {
     BitmapUtils bitmapUtils;
 
-    public RecommendAdapter(Context context, List<Recommend> list) {
+    public RecommendAdapter(Context context, List<Recommand> list) {
         super(context, list);
         bitmapUtils = new BitmapUtils(context);
     }
 
     @Override
     public View createView(int i, View view, ViewGroup viewGroup) {
-        Recommend recommend = list.get(i);
+        Recommand recommend = list.get(i);
         ViewHolder vh = null;
         if (view == null) {
             view = inflater.inflate(R.layout.adapter_recommend_layout, viewGroup, false);

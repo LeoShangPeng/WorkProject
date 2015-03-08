@@ -9,9 +9,7 @@ package com.qianfeng.mgp.bean;
  * @日 期:
  */
 public class Banner extends BaseBean {
-    private String id;
     private String bname;
-
     private String bimg;
 
     private String linkto;
@@ -20,14 +18,6 @@ public class Banner extends BaseBean {
     private String url;
 
     private String border;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getBname() {
         return bname;

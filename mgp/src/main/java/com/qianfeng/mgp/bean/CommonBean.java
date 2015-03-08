@@ -9,6 +9,7 @@ public class CommonBean<T> implements Serializable {
     private Page page;
     private List<T> info;
 
+
     public String getState() {
         return state;
     }
