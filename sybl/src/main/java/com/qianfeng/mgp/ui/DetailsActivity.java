@@ -162,6 +162,7 @@ public class DetailsActivity extends ActionBarActivity implements View.OnClickLi
         //设置显示的View
         popupWindow.setContentView(popContentView);
         //设置点击PopupWindow以外的地方popwindow隐藏
+
     }
 
     /**
@@ -216,23 +217,21 @@ public class DetailsActivity extends ActionBarActivity implements View.OnClickLi
             if (popupWindow.isShowing()) {
                 popupWindow.dismiss();
             } else {
-                popupWindow.showAsDropDown(actionBarView, 0, 200);
+                popupWindow.showAsDropDown(actionBarView, 0, 300);
             }
         }
-        if (getSupportActionBar().isShowing()){
-            getSupportActionBar().hide();
-        }else {
-            getSupportActionBar().show();
-        }
-
+//        if (getSupportActionBar().isShowing()) {
+//            getSupportActionBar().hide();
+//        } else {
+//            getSupportActionBar().show();
+//        }
     }
-
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) {
-            popupWindow.showAsDropDown(actionBarView, 0, 200);
+            popupWindow.showAsDropDown(actionBarView, 0, 300);
         }
     }
 }

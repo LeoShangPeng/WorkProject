@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.1/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="88e8e18d365173ad04a543d76c157e0b644f0b3f">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-6c4beca9fce63c24112b2566261aa2893379c6a0.jar" />
+    </item>
+    <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.0.2"
@@ -9,25 +16,18 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-92499c7c9473c6f78fd66dd13ea93858f612b631.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/volley/unspecified/classes.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="6c8ceee3bd66abcfb444cc6f4eec15ac6c424d83">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-20e563c79f8bc022ed8325066b28a8d869bb0c07.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-accda4b19d523ef94ab39ba7ad16acc788dddfc2.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/libs/fastjson-1.1.45.android.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/libs/fastjson-1.1.45.android.jar"
         jumboMode="false"
         revision="21.0.2"
         sha1="4d5140a0c8f5e4d0f263cac44dbac1019a908474">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/fastjson-1.1.45.android-3bcca6f06cd04e5967467eba76eb1f842f55c6f9.jar" />
-    </item>
-    <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-48e756f045e92cdb3aa3f99b3dcebdda7e94468c.jar" />
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/fastjson-1.1.45.android-1a92301e2cbd121c4047da22d042ed9aecb74918.jar" />
     </item>
     <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/apputils/unspecified/classes.jar"
@@ -37,11 +37,11 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-ce9dd78e873d07bac04fc1c4cd87f7f4a289c65e.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.5/classes.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-a0a87a0f3b25045b790c413ea8d83b2bc7339994.jar" />
+        sha1="ef9c8936bb86194ac47f8925ae827d6505188694">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-31aa9ab2366051226aba075435c1bb8a3659e4ae.jar" />
     </item>
     <item
         jar="/Users/zw/zhangwei/tools/Android/studiosdk/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
@@ -51,6 +51,13 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-e091a16fc59e1d41d0e76f010c4e410a8ffb4ace.jar" />
     </item>
     <item
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-24deee209fb0287e82cdcbf5aad8674b6b8a16a8.jar" />
+    </item>
+    <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.0.2"
@@ -58,11 +65,11 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-75549827d44351ec355baf0d441b67dddcbf88ad.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.1/classes.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/WorkProject/volley/unspecified/classes.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="88e8e18d365173ad04a543d76c157e0b644f0b3f">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-7dc3812546fabcf6484c8614f724a46f64e21463.jar" />
+        sha1="1b07a5a7fe81f3518745d912b149151c8ffa4f36">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-a2bcb421fceb3e5a4ef4fd0bb1a21e91af81e7a5.jar" />
     </item>
     <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/volley/unspecified/classes.jar"
@@ -79,6 +86,13 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-c69e7494f1525652c336c7c59d6f8e96ab549260.jar" />
     </item>
     <item
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/WorkProject/apputils/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="c064d25cf9285b0c3d428cc449c0fdf31cf71a8d">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-80edc0e952c449ec49866d0ee437227cec938575.jar" />
+    </item>
+    <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/ptr/unspecified/classes.jar"
         jumboMode="false"
         revision="21.0.2"
@@ -93,18 +107,11 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/fastjson-1.1.45.android-31271e00878fb628eaca0e122ac59fc84c0775c0.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.5/classes.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/WorkProject/ptr/unspecified/classes.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="ef9c8936bb86194ac47f8925ae827d6505188694">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-fae7ff16261442b700fca8b42708ddba69cff079.jar" />
-    </item>
-    <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/ptr/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="799ccb16465b885cbfffccd9d31bfef328ceb95f">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-5a26d648d54ee6d2ec2472beb26c29a0f2b61128.jar" />
+        sha1="73f63af95b8e99044549a3c77e43fdeb8029c651">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-495b62f8361b320179fb395b00a9d0848dab3aa6.jar" />
     </item>
     <item
         jar="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
@@ -114,11 +121,11 @@
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-0f918b6cb82618e11b7bfc162b01b1f396d1fa19.jar" />
     </item>
     <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jar="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.0.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-42414e21d4438407d09b3a35558cc18c7cd74a06.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/sybl/build/intermediates/pre-dexed/debug/classes-a5ec258885c9b50302984d16f7eeb8170965fbd3.jar" />
     </item>
     <item
         jar="/Users/zw/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.5/77bf7cacf9cefe19dc105e5425d2eb1bb5285881/android-async-http-1.4.5.jar"
@@ -126,13 +133,6 @@
         revision="21.0.2"
         sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
         <dex dex="/Users/zw/zhangwei/work/work/StudyDemo/WorkProject/mgp/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-05f1f0a25bbbbbc3cc339474f796a0d33227ec38.jar" />
-    </item>
-    <item
-        jar="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/exploded-aar/WorkProject/apputils/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="bd1bad03966c118340aef0717e719e1dba47c238">
-        <dex dex="/Users/zw/zhangwei/work/project/WorkProject/mgp/build/intermediates/pre-dexed/debug/classes-6e66d8b01a5a6e3acfa9956cafb17d460d88632e.jar" />
     </item>
     <item
         jar="/Users/zw/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
